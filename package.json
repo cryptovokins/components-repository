@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "npm run storybook",
-    "create:library": "node lib-manager.js",
+    "lib-manager": "node lib-manager.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

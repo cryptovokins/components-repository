@@ -3,6 +3,7 @@ import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
 import { Welcome, Button } from '@storybook/angular/demo';
+import { TestLibraryComponent } from '../../projects/test-library/src/public-api';
 
 storiesOf('Welcome', module).add('to Storybook', () => ({
   component: Welcome,
@@ -38,6 +39,10 @@ storiesOf('Button', module)
     { notes: 'My notes on a button with emojis' }
   );
 
+storiesOf('Example of story for testLibrary', module)
+.add('Example of how to test a web component', () => ({
+  component: TestLibraryComponent
+}));
 storiesOf('Another Button', module).add('button with link to another story', () => ({
   component: Button,
   props: {
